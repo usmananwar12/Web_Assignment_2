@@ -18,3 +18,7 @@ document.addEventListener("DOMContentLoaded", function () {
         this.reset(); 
     });
 });
+
+// assignment # 2 code starts here
+
+
