@@ -150,9 +150,21 @@
                                 <input type="text" class="form-control" id="name" placeholder="Enter your name">
                             </div>
                             <div class="mb-3">
-                                <label for="email" class="form-label fw-bold">Your Email</label>
-                                <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                                <label class="form-label fw-bold d-block">Your Rating</label>
+                                <div id="starRating" class="text-warning">
+                                    <input type="radio" name="rating" id="star5" value="5">
+                                    <label for="star5"><i class="fas fa-star"></i></label>
+                                    <input type="radio" name="rating" id="star4" value="4">
+                                    <label for="star4"><i class="fas fa-star"></i></label>
+                                    <input type="radio" name="rating" id="star3" value="3">
+                                    <label for="star3"><i class="fas fa-star"></i></label>
+                                    <input type="radio" name="rating" id="star2" value="2">
+                                    <label for="star2"><i class="fas fa-star"></i></label>
+                                    <input type="radio" name="rating" id="star1" value="1">
+                                    <label for="star1"><i class="fas fa-star"></i></label>
+                                </div>
                             </div>
+                
                             <div class="mb-3">
                                 <label for="message" class="form-label fw-bold">Your Feedback</label>
                                 <textarea class="form-control" id="message" rows="4" placeholder="Write your feedback here..."></textarea>
@@ -161,34 +173,16 @@
                         </form>
                     </div>
                 </div>
+                
                 <div class="container-fluid">
                     <div class="position-relative text-center mb-5 mt-5">
                         <h2 class="section-title">Customer Feedbacks</h2>
                         <div class="title-underline"></div>
                     </div>
-                    <div class="row">
-                        <div class="col-md-4">
-                            <div class="service-card">
-                                <i class="fas fa-comments fa-3x"></i>
-                                <h3>Usman Anwar</h3>
-                                <p>"Excellent service! The team was very professional and made my travel experience seamless. Highly recommended!"</p>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="service-card">
-                                <i class="fas fa-comments fa-3x"></i>
-                                <h3>John doe</h3>
-                                <p>"Great experience! The Hajj package was well-organized, and the team was very supportive throughout the journey."</p>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="service-card">
-                                <i class="fas fa-comments fa-3x"></i>
-                                <h3>Muhammad Anwar</h3>
-                                <p>"Great experience! Comfortable accommodations near the holy sites. I would 100% recommend"</p>
-                            </div>
-                        </div>
+                    <div class="row" id="reviews-container">
+                        <!-- write reviews dynamically -->
                     </div>
+
                 </div>
             </div>
         </section>
@@ -229,6 +223,5 @@
         </div>
 
 
-        <script src="bootstrap/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     </body>  
 </html>

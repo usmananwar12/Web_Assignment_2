@@ -4,14 +4,18 @@ body {
     flex-direction: column;
     min-height: 100vh;
     font-family: 'Lora', serif;
-    padding-top: 70px; 
+    padding-top: 70px;
 }
-h1, h2 {
+
+h1,
+h2 {
     font-family: 'Playfair Display', serif;
 }
+
 main {
     flex: 1;
 }
+
 .navbar {
     position: fixed;
     top: 0;
@@ -25,10 +29,12 @@ main {
 .navbar a {
     color: white !important;
 }
+
 #navbarNav a:hover {
     color: #FFD700 !important;
 }
-nav img{
+
+nav img {
     width: 50px;
     height: 50px;
     margin-top: 10px;
@@ -38,12 +44,12 @@ nav img{
 footer .container a {
     color: white;
     font-size: 24px;
-    margin: 0 10px; 
+    margin: 0 10px;
     transition: color 0.4s ease-in-out;
 }
 
 footer .container a:hover {
-    color: #FFD700; 
+    color: #FFD700;
 }
 
 
@@ -104,11 +110,11 @@ footer .container a:hover {
 }
 
 .navbar-toggler {
-    border-color: rgba(255, 255, 255, 0.7); 
+    border-color: rgba(255, 255, 255, 0.7);
 }
 
 .navbar-toggler-icon {
-    filter: brightness(0) invert(1); 
+    filter: brightness(0) invert(1);
 }
 
 .chat-btn {
@@ -243,4 +249,26 @@ footer .container a:hover {
 
 #feedback {
     padding: 80px 20px;
+}
+
+#starRating {
+    direction: rtl;
+    display: inline-flex;
+}
+
+#starRating input {
+    display: none;
+}
+
+#starRating label {
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #ccc;
+    margin: 0 2px;
+}
+
+#starRating input:checked~label,
+#starRating label:hover,
+#starRating label:hover~label {
+    color: #ffc107;
 }
