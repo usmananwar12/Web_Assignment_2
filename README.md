@@ -9,14 +9,15 @@ This is the landing page for a travel management website where users can manage 
 - **Services Section** – Showcases airline ticketing, Hajj & Umrah packages, and hotel bookings.  
 - **About Us Section** – Displays company details and mission statement.  
 - **Floating Chat Button** – Users can interact via a chat popup for quick assistance.  
-- **Feedback Form** – Allows users to submit their feedback on the services.  
+- **Feedback Section** – Allows users to submit their feedback on the services and show cumtomer feedbacks  
 - **Responsive Design** – Works on all screen sizes.  
 
 ## Technologies Used  
 
-- **HTML5** – Structure of the landing page  
-- **CSS & Bootstrap** – Styling and responsive design  
-- **JavaScript (script.js)** – Handles interactivity like the chat popup  
-- **Font Awesome** – Icons for better UI  
-
-
+- **HTML5** – Structure and layout of the landing page  
+- **CSS3 & Bootstrap** – Styling, layout, and responsiveness  
+- **JavaScript (script.js)** – Interactive functionality (chat popup, form validation, feedback rendering)  
+- **jQuery** – Simplified DOM manipulation and animation
+- **AJAX (XMLHttpRequest)** – Used to fetch and display customer reviews from a `reviews.json` file   
+- **JSON** – Used for dynamically loading and displaying customer reviews
+- **Font Awesome** – Iconography for a modern UI  
