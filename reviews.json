@@ -3,26 +3,57 @@
       {
         "name": "Nawaz Sharif",
         "rating": 5,
-        "date": "2025-03-10",
         "review": "Absolutely amazing service! Everything was perfectly organized and stress-free. Highly recommended!"
       },
       {
         "name": "Umar Farooq",
         "rating": 4,
-        "date": "2025-02-22",
         "review": "Very professional and responsive team. Had a smooth experience overall. Just a slight delay in hotel check-in."
       },
       {
         "name": "Fatima Noor",
         "rating": 5,
-        "date": "2025-01-15",
         "review": "This was my second time booking through them, and once again they exceeded my expectations. Thank you!"
       },
       {
-        "name": "Ali Raza",
-        "rating": 3.5,
-        "date": "2024-12-30",
-        "review": "The trip was good, but communication could’ve been better. Still, not a bad experience."
+        "name": "Ali Khan",
+        "rating": 3,
+        "review": "The itinerary was good, but I faced some issues with the transportation. Could be improved."
+      },
+      {
+        "name": "Sara Ahmed",
+        "rating": 4,
+        "review": "Great experience overall! The guides were knowledgeable and friendly. Would definitely book again."
+      },
+      {
+        "name": "Bilal Malik",
+        "rating": 2,
+        "review": "Not satisfied with the service. There were several miscommunications and delays."
+      },
+      {
+        "name": "Aisha Khan",
+        "rating": 5,
+        "review": "An unforgettable trip! Everything was well-planned and executed. Kudos to the team!"
+      },
+      {
+        "name": "Hassan Ali",
+        "rating": 4,
+        "review": "Good value for money. The accommodations were decent, and the activities were fun."
+      },
+      {
+        "name": "Zainab Iqbal",
+        "rating": 5,
+        "review": "I loved every moment of my trip! The customer service was top-notch. Highly recommend!"
+      },
+      {
+        "name": "Omer Shah",
+        "rating": 3,
+        "review": "The trip was okay, but I expected more from the itinerary. Some activities felt rushed."
+      },
+      {
+        "name": "Nida Rehman",
+        "rating": 4,
+        "review": "Overall a good experience, but there were a few hiccups along the way. Still worth it!"
       }
     ]
   }
