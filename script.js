@@ -1,4 +1,43 @@
 document.addEventListener("DOMContentLoaded", function () {
+
+    // Login functionality
+    const loginForm = document.getElementById("loginForm");
+
+    loginForm.addEventListener("submit", function (e) {
+        console.log("Login form submitted.");
+        e.preventDefault();
+
+        const enteredUsername = document.getElementById("username").value.trim();
+        const enteredPassword = document.getElementById("password").value.trim();
+
+        const xhr = new XMLHttpRequest();
+        xhr.open('GET', 'json/users.json', true);
+
+        xhr.onload = function () {
+            if (xhr.status >= 200 && xhr.status < 300) {
+                const usersData = JSON.parse(xhr.responseText);
+                const matchedUser = usersData.users.find(user =>
+                    user.username === enteredUsername && user.password === enteredPassword
+                );
+
+                if (matchedUser) {
+                    // Redirect on success
+                    window.location.href = 'dashboard.html';
+                } else {
+                    alert("Incorrect username or password.");
+                }
+            } else {
+                alert("Failed to load user data.");
+            }
+        };
+
+        xhr.onerror = function () {
+            alert("Error connecting to server.");
+        };
+
+        xhr.send();
+    });
+
     function generateStars(rating) {
         let starsHTML = '';
         const fullStars = Math.floor(rating);
@@ -19,7 +58,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     const xhr = new XMLHttpRequest();
-    xhr.open('GET', 'reviews.json', true);
+    xhr.open('GET', 'json/reviews.json', true);
 
     xhr.onload = function () {
         if (xhr.status >= 200 && xhr.status < 300) {
