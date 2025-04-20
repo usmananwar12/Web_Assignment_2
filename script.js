@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
                 if (matchedUser) {
                     // Redirect on success
-                    window.location.href = 'dashboard.html';
+                    window.location.href = 'logined/dashboard.html';
                 } else {
                     alert("Incorrect username or password.");
                 }
